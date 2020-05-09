@@ -5,10 +5,16 @@ const SongDetail = (props) => {
 	if(!props.selectedSong)
 		return <div>Select a song to see details!!</div>;
 	return (
-		<div>
-			<h3>Details of the selected song:</h3>
+		<div class="ui cards">
+		  <div class="card">
+		    <div className="content">
+			<div className="header">Details of the selected song:</div>
+			<div className="description">
 			Title : {props.selectedSong.title}<br/>
 			Duration: {props.selectedSong.duration}
+			</div>
+		</div>
+		</div>
 		</div>
 	);
 }

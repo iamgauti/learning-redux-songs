@@ -4,7 +4,7 @@ import SongDetail from './SongDetail';
 
 const App = () => {
 	return (
-		<div className="ui container grid">
+		<div className="ui container grid" style={{padding:"10px"}}>
 			<div className="ui row">
 				<div className="column eight wide">
 					<SongList />
